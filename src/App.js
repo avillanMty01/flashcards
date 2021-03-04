@@ -3,14 +3,6 @@
 import React, { useState } from 'react';
 import FlashcardList from './FlashcardList';
 
-function App() {
-  const [flashcards, setFlashcards] = useState(SAMPLE_FLASHCARDS)
-
-  return (
-    <FlashcardList flashcards={flashcards} />
-  );
-}
-
 const SAMPLE_FLASHCARDS = [
   {
     id: 1,
@@ -37,6 +29,17 @@ const SAMPLE_FLASHCARDS = [
     options: [ 32, 8, 16, 256]
   }
 ]
+
+
+function App() {
+  const [flashcards, setFlashcards] = useState(SAMPLE_FLASHCARDS)
+
+  return (
+    <FlashcardList flashcards={flashcards} />
+  );
+}
+
+
 
 
 export default App;
