@@ -16,6 +16,6 @@ export default function Flashcard({ flashcard }) {
             </div>
           </div>
           <div className="back">{flashcard.answer}</div>
-        </div>
+      </div>
     )
 }
